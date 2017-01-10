@@ -65,7 +65,7 @@ RUN sed -i -e 's#^ES_HOME=$#ES_HOME='$ES_HOME'#' /etc/init.d/elasticsearch \
 
 ### install Logstash
 
-ENV LOGSTASH_VERSION ${ELK_VERSION}
+ENV LOGSTASH_VERSION 2.4.0
 ENV LOGSTASH_HOME /opt/logstash
 ENV LOGSTASH_PACKAGE logstash-${LOGSTASH_VERSION}.tar.gz
 ENV LOGSTASH_GID 992
